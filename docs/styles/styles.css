@@ -1,10 +1,10 @@
 .side-container {
-  width: 300px;
-  height: 100%;
+  width: 720px;
+  height: fit-content;
   position: fixed;
-  right: 0;
-  top: 48px;
-  background-color: #fff;
+  right: -45px;
+  top: 60px;
+  background-color: transparent;
 }
 
 #side-container img {
@@ -12,9 +12,15 @@
   height: 100%;
 }
 
-#test {
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.md-grid {
+  margin-left: 175px !important;
+}
+
+.md-content__inner {
+  margin-right: 240px;
+  margin-bottom: 610px;
+}
+
+.md-header__inner {
+  max-width: 70rem !important;
 }
