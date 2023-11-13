@@ -71,8 +71,8 @@
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
         background-color: rgba(0, 0, 0, 0.184);
-        color: var(--md-default-bg-color);
-        border-color: rgba(0, 0, 0, 0.184);
+        color: var(--md-white-color);
+        border-color: var(--md-white-color);
     }
 
     @media screen and (max-width:30em) {
@@ -161,7 +161,7 @@
     }
 
     .cards_container {
-        color: black;
+        /* color: black; */
         display: flex;
         justify-content: center;
         margin: 0;
@@ -169,10 +169,11 @@
     }
 
     .card {
-        background-color: rgba(255, 255, 255, 0.971);
-        border: 1px solid rgba(0, 0, 0, 0.147);
+        /* background-color: rgba(255, 255, 255, 0.971); */
+        background-color: var(--md-card-bg-color);
+        border: 1px solid var(--md-card-border-color);
         border-radius: 6px;
-        color: black;
+        /* color: black; */
         display: flex;
         flex-direction: column;
         flex-grow: 0;
@@ -186,8 +187,8 @@
 
     .card:hover {
         border: 1px solid transparent;
-        box-shadow: 0 10px 20px #282a3017;
-        color: black;
+        box-shadow: var(--md-card-box-shadow);
+        /* color: black; */
         text-decoration: none;
     }
 
@@ -230,7 +231,6 @@
 
     .cards_container .card a {
         border-radius: 15px;
-        color: var(--transpara-primary-color1);
         font-weight: 700;
         margin-top: 8px;
         padding: 3px 0;
@@ -247,12 +247,11 @@
     .card p {
         font-size: 14px;
         line-height: 1.8em;
-        /* text-rendering: optimizeLegibility; */
         -webkit-font-smoothing: antialiased;
-        color: #111;
         margin: 0 0 10px;
         display: block;
     }
+
 </style>
 
 <!-- Main site Entry button descriptions -->
