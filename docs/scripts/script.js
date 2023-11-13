@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
   let imageSrc = '';
   imageSources.forEach(({ start, image}) => {
     if (scrollPosition > start) {
-      imageSrc = `https://raw.githubusercontent.com/gabrielraeder/website/main/docs/static/images/miccai-tutorial${image}.png`;
+      imageSrc = `https://raw.githubusercontent.com/gabrielraeder/website/main/docs/static/images/workflow/miccai-tutorial${image}.png`;
     }
   })
   image.src = imageSrc;
