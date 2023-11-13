@@ -49,10 +49,6 @@
         /* margin: 0 auto; */
     }
 
-    .tx-hero__content p {
-        /* margin-top: 5px; */
-    }
-
     .tx-hero__image {
         width: 17rem;
         height: 17rem;
@@ -156,7 +152,7 @@
         .top-hr {
             width: 100%;
             display: flex;
-            max-width: 61rem;
+            /* max-width: 61rem; */
             margin-right: auto;
             margin-left: auto;
             padding: 0 .2rem;
@@ -233,6 +229,96 @@
     .md-footer-social {
         padding-top: 20px;
     }
+
+    .cards_container {
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.971);
+        border: 1px solid rgba(0, 0, 0, 0.147);
+        border-radius: 6px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: fit-content;
+        margin: 16px;
+        padding: 16px;
+        transition: box-shadow 0.3s ease, border 0.1s ease;
+        width: 408px;
+    }
+
+    .card:hover {
+        border: 1px solid var(--transpara-primary-color2);
+        box-shadow: 0 10px 20px #282a3017;
+        color: black;
+        text-decoration: none;
+    }
+
+    .card .card_image {
+        background-position: center;
+        background-size: cover;
+        border-radius: 6px;
+        height: 120px;
+        padding: 10px;
+    }
+
+    .cards_container .card .image1 {
+        background-image: url('https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fHww');
+    }
+
+    .cards_container .card .image2 {
+        background-image: url('https://media.istockphoto.com/id/1470130937/photo/young-plants-growing-in-a-crack-on-a-concrete-footpath-conquering-adversity-concept.webp?b=1&s=170667a&w=0&k=20&c=IRaA17rmaWOJkmjU_KD29jZo4E6ZtG0niRpIXQN17fc=');
+    }
+
+    .cards_container .card .image3 {
+        background-image: url('https://thumbs.dreamstime.com/z/random-click-squirrel-wire-random-picture-cute-squirrel-219506797.jpg');
+    }
+
+    .cards_container .card .image4 {
+        background-image: url('https://i.pinimg.com/736x/44/29/f0/4429f02128255f000ff0f11e03fc2cb2.jpg');
+    }
+
+    .cards_container .card .image5 {
+        background-image: url('https://lh3.googleusercontent.com/hwau7OVWx96XaME5KpRuJ0I_MscrerK6SbRH1UwYHYaxIDQQtn7RZK02LDSfBzCreidFgDsJeXyqDct6EZiH6vsV=w640-h400-e365-rj-sc0x00ffffff')
+    }
+
+    .cards_container .card_text {
+        padding-top: 16px;
+    }
+
+    .cards_container .card_text h3 {
+        height: 24px;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .cards_container .card_text p {
+        margin: 8px 0 0 0;
+        min-height: 40px;
+        height: fit-content;
+    }
+
+    .cards_container .card a {
+        border-radius: 15px;
+        color: var(--transpara-primary-color1);
+        font-weight: 700;
+        margin-top: 8px;
+        padding: 3px 0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        width: fit-content;
+    }
+
+    .cards_container .card:hover a {
+        text-decoration: underline !important;
+        color: var(--transpara-highlights-color2) !important;
+    }
 </style>
 
 <!-- Main site Entry button descriptions -->
@@ -257,8 +343,35 @@
 </section>
 
 <!-- Main site box descriptions -->
-<div class="top-hr">
-    <a class="feature-item" href="tutorial/#inference-setup-with-medperf-benchmark-owner">
+<div class="top-hr cards_container">
+    <a class="card" href="tutorial/#inference-setup-with-medperf-benchmark-owner">
+        <div class="card_image image1">
+        </div>
+        <div class="card_text">
+            <h2 class='cardTitle'>Benchmark owner</h2>
+            <p>This is the benchmark owner journey description.</p>
+        </div>
+    </a>
+
+    <a class="card" href="tutorial/#inference-setup-with-medperf-benchmark-owner">
+        <div class="card_image image2">
+        </div>
+        <div class="card_text">
+            <h2 class='cardTitle'>Benchmark owner</h2>
+            <p>This is the benchmark owner journey description.</p>
+        </div>
+    </a>
+
+    <a class="card" href="tutorial/#inference-setup-with-medperf-benchmark-owner">
+        <div class="card_image image3">
+        </div>
+        <div class="card_text">
+            <h2 class='cardTitle'>Benchmark owner</h2>
+            <p>This is the benchmark owner journey description.</p>
+        </div>
+    </a>
+
+    <!-- <a class="feature-item" href="tutorial/#inference-setup-with-medperf-benchmark-owner">
         <h2>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
@@ -291,7 +404,7 @@
             Data owner
         </h2>
         <p>This is the Data owner journey description.</p>
-    </a>
+    </a> -->
 </div>
 
 <!-- <div class="top-hr">
